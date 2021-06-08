@@ -32,7 +32,7 @@ section {
 .carousel-images {
   display: flex;
   width: 60vw;
-  height: 65vh;
+  height: 55vh;
 }
 
 .carousel-images img {
@@ -127,4 +127,50 @@ section {
 
 .button:active {
   background-color: #3524d1;
+}
+
+@media only screen and (max-width: 992px) {
+  html,
+  body {
+    font-size: 14px;
+  }
+
+  section {
+    padding: 3rem 10%;
+  }
+
+  .carousel-images {
+    height: 40vh;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  html,
+  body {
+    font-size: 12px;
+  }
+
+  section {
+    padding: 2rem 5%;
+  }
+
+  .carousel-images {
+    height: 30vh;
+  }
+
+  .button {
+    width: 8rem;
+    font-size: 1.3rem;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  html,
+  body {
+    font-size: 10px;
+  }
+
+  .carousel-images {
+    height: 20vh;
+  }
 }

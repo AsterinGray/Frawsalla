@@ -1,0 +1,187 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans';
+}
+
+header {
+  background-color: #3f3697;
+  padding: 0 1rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.hamburger {
+  width: 3rem;
+  cursor: pointer;
+}
+
+.bar {
+  width: 2.5rem;
+  height: 0.3rem;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.bar:nth-child(2) {
+  margin: 0.5rem 0;
+}
+
+#hamburger:checked + .menu {
+  padding: 0.5rem 1rem;
+  display: flex;
+}
+
+.menu {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  top: 5rem;
+  left: 0;
+  background-color: #3d84b8;
+}
+
+.menu a {
+  border-bottom: 1px solid white;
+  text-decoration: none;
+  color: white;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.logo {
+  width: 20rem;
+  margin: 0 2rem;
+}
+
+section {
+  padding: 5rem 10%;
+}
+
+.heading {
+  font-family: 'Bungee Inline';
+  font-size: 3rem;
+  margin: 0;
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+}
+
+.carousel img {
+  width: 5rem;
+}
+
+.carousel-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-images {
+  display: flex;
+  width: 60vw;
+  overflow: hidden;
+}
+
+.carousel-images img {
+  width: 60vw;
+}
+
+.dots {
+  display: flex;
+  margin-top: 2rem;
+}
+
+.dot {
+  width: 1rem;
+  height: 1rem;
+  background-color: gray;
+  border-radius: 1rem;
+  margin: 0 0.5rem;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content img {
+  width: 80%;
+}
+
+.content a {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  background-color: #e1e1e1;
+  border-radius: 15px;
+  padding: 1rem 2rem;
+  text-align: center;
+  width: 25%;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card-text {
+  margin-top: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.center {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.button {
+  background-color: #3f3697;
+  color: white;
+  width: 10rem;
+  border-radius: 15px;
+  outline: none;
+  border: none;
+  margin-top: 1rem;
+  font-family: 'Bungee Inline';
+  font-size: 1.5rem;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.button:active {
+  background-color: #3524d1;
+}
+
+footer {
+  background-color: #3f3697;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  color: white;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+}
+
+.social img {
+  margin: 0 0.5rem;
+}

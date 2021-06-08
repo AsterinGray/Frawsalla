@@ -1,18 +1,13 @@
-let next = $('#next');
-let prev = $('#prev');
+const nextImg = () => {
+  let currImg = $('.active');
+  let nextImg = $(currImg).next();
+  let firstImg = currImg.prevAll().last();
 
-let image = $('.carousel-image');
-
-let active = $('.carousel-image.active');
-
-console.log(image);
-// console.log(active);
-
-$(next).click(() => {
-  nextImage();
-  console.log('next');
-});
-
-const nextImage = () => {
-  let nextActive = $(active).next('.carousel-image');
+  if (nextImg.length) {
+    currImg.removeClass('active').css('z-index', '-3');
+    nextImg.addClass('active').css('z-index', '3');
+  } else {
+    currImg.removeClass('active').css('z-index', '-3');
+    nextImg.addClass('active').css('z-index', '3');
+  }
 };

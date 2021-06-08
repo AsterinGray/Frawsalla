@@ -1,20 +1,3 @@
-.menu {
-  position: absolute;
-  display: none;
-  flex-direction: column;
-  top: 5rem;
-  left: 0;
-  background-color: #3d84b8;
-}
-
-.menu a {
-  border-bottom: 1px solid white;
-  text-decoration: none;
-  color: white;
-  padding-bottom: 0.5rem;
-  margin-bottom: 1rem;
-}
-
 .logo {
   width: 20rem;
   margin: 0 2rem;
@@ -49,11 +32,26 @@ section {
 .carousel-images {
   display: flex;
   width: 60vw;
-  overflow: hidden;
+  height: 55vh;
 }
 
 .carousel-images img {
   width: 60vw;
+  position: absolute;
+  opacity: 0;
+}
+
+#prev,
+#next {
+  display: flex;
+  align-items: center;
+}
+
+#prev img,
+#next img {
+  width: 3rem;
+  cursor: pointer;
+  margin: 1rem;
 }
 
 .dots {
@@ -67,6 +65,10 @@ section {
   background-color: gray;
   border-radius: 1rem;
   margin: 0 0.5rem;
+}
+
+.dot.active {
+  background-color: black;
 }
 
 .content {
@@ -125,4 +127,50 @@ section {
 
 .button:active {
   background-color: #3524d1;
+}
+
+@media only screen and (max-width: 992px) {
+  html,
+  body {
+    font-size: 14px;
+  }
+
+  section {
+    padding: 3rem 10%;
+  }
+
+  .carousel-images {
+    height: 40vh;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  html,
+  body {
+    font-size: 12px;
+  }
+
+  section {
+    padding: 2rem 5%;
+  }
+
+  .carousel-images {
+    height: 30vh;
+  }
+
+  .button {
+    width: 8rem;
+    font-size: 1.3rem;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  html,
+  body {
+    font-size: 10px;
+  }
+
+  .carousel-images {
+    height: 20vh;
+  }
 }

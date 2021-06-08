@@ -32,7 +32,9 @@
     </header>
     <section class="screenshots">
       <div class="carousel">
-        <div id="next">next</div>
+        <div id="prev" onclick="prevImg()">
+          <img src="images/gameplay/prev.png" alt="" />
+        </div>
         <div class="carousel-content">
           <div class="carousel-images">
             <img
@@ -52,12 +54,14 @@
             />
           </div>
           <div class="dots">
-            <div class="dot"></div>
+            <div class="dot active"></div>
             <div class="dot"></div>
             <div class="dot"></div>
           </div>
         </div>
-        <div id="prev">prev</div>
+        <div id="next" onclick="nextImg()">
+          <img src="images/gameplay/next.png" alt="" />
+        </div>
       </div>
     </section>
 

@@ -39,6 +39,23 @@ header {
   display: flex;
 }
 
+.menu {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  top: 5rem;
+  left: 0;
+  background-color: #3d84b8;
+}
+
+.menu a {
+  border-bottom: 1px solid white;
+  text-decoration: none;
+  color: white;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
 footer {
   background-color: #3f3697;
   display: flex;

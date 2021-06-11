@@ -1,0 +1,98 @@
+.wrapper{
+    width: 100%;
+    padding: 0 0 calc(2.5vw + 1vh + 2rem) 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.page-title{
+    width: 95%;
+}
+
+.page-title > h1{
+    font-family: 'Bungee Inline';
+    font-size: 5em;
+    margin: 0;
+    padding: 0;
+}
+
+.container-box{
+    width: 88%;
+    margin: calc(1vw + 0.6vh + 0.9rem);
+    padding: calc(1vw + 0.7vh + 0.95rem);
+    border: calc(0.12vw + 0.05vh + 0.15rem) solid black;
+    border-radius: 0.75rem;
+    display: flex;
+    align-items: center;
+}
+
+#box1{
+    margin-top: 0!important;
+}
+
+#box2 > .text-container > .text-header{
+    text-align: right;
+}
+
+.image-container{
+    padding: 0 calc(1.5vw + 1.2vh) 0 calc(1.5vw + 1.2vh);
+}
+
+.event-image{
+    width: calc(10vw + 9vh + 8rem);
+}
+
+.text-header > h1{
+    font-size: 3em;
+    margin: 0;
+}
+
+.text-content{
+    text-align: justify;
+    font-size: 1.2em;
+}
+
+.text-content > p{
+    margin: 0;
+    padding-top: 1.2rem;
+}
+
+.event-date{
+    margin: 0;
+    font-size: 0.9em;
+    color: grey;
+}
+
+@media all and (max-width: 800px){
+    .page-title > h1{
+        font-size: 4.5em;
+    }
+
+    .container-box{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .text-content{
+        font-size: 1em;
+    }
+
+    .text-header > h1{
+        font-size: 2em;
+    }
+
+    .event-date{
+        font-size: 0.8em;
+    }
+
+    #box2{
+        flex-direction: column-reverse;
+    }
+}
+
+@media all and (max-width: 600px){
+    .page-title > h1{
+        font-size: 4em;
+    }
+}

@@ -1,0 +1,47 @@
+section {
+  padding: 5rem 10%;
+}
+
+h1 {
+  font-family: 'Bungee Inline';
+  font-size: 3rem;
+  margin: 0;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 25%;
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+}
+
+.card-name {
+  font-family: 'Open Sans';
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 992px) {
+  .card {
+    width: 50%;
+    padding: 0.5rem 1rem;
+    text-align: center;
+  }
+  h1 {
+    font-family: 'Bungee Inline';
+    font-size: 2rem;
+    margin: 0;
+  }
+}

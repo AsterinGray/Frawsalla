@@ -1,97 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../styles/header-footer.css" />
     <link rel="stylesheet" href="../styles/home.css" />
-    <link rel="stylesheet" href="../styles/play-now.css">
+    <link rel="stylesheet" href="../styles/play-now.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Open+Sans:wght@300;600&display=swap"
-        rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Open+Sans:wght@300;600&display=swap"
+      rel="stylesheet"
+    />
     <title>Play Now</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <label for="hamburger" class="hamburger">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-        </label>
-        <input type="checkbox" name="" id="hamburger" hidden />
-        <div class="menu">
-            <a href="/">Screenshots</a>
-            <a href="/">Events</a>
-            <a href="/">Characters</a>
-            <a href="pages/play-now.html">Play Now</a>
-        </div>
-        <a href="../home.html"><img src="../images/Frawsalla Logo.png" alt="Frawsalla Logo" class="logo" /></a>
+      <label for="hamburger" class="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </label>
+      <input type="checkbox" name="" id="hamburger" hidden />
+      <div class="menu">
+        <a href="./screenshots.html">Screenshots</a>
+        <a href="./events.html">Events</a>
+        <a href="./charaters.html">Characters</a>
+        <a href="./play-now.html">Play Now</a>
+      </div>
+      <a href="../home.html"
+        ><img
+          src="../images/Frawsalla Logo.png"
+          alt="Frawsalla Logo"
+          class="logo"
+      /></a>
     </header>
 
-    
     <div class="content">
-        <h1 class="heading"> Play Now </h1>
-        <div class="form-container">
-            <form name="form" action="../home.html" method="POST">
-                <div class="form-group-1">
-                    <label for="name" class="form-title">Name</label>
-                    <input type="text" name="name" id="name">
-                    <span class="error" id="error-name"></span>
-                </div>
-    
-                <div class="form-group-1">
-                    <label for="email" class="form-title">Email</label>
-                    <input type="email" name="email" id="email">
-                    <span class="error" id="error-email"></span>
-                </div>
-    
-                <div class="form-group-1">
-                    <label for="password" class="form-title">Password</label>
-                    <input type="password" name="password" id="password">
-                    <span class="error" id="error-password"></span>
-                </div>
-    
-                <label for="gender" class="form-title">Gender</label>
-                <div class="form-group-2">
-                    <input type="radio" name="gender" id="gender" value="Male"> Male
-                    <input type="radio" name="gender" id="gender" value="Female"> Female
-                    <span class="error" id="error-gender"></span>
-                </div>
-    
-                <div class="form-group-3">
-                    <input type="checkbox" name="toc" id="toc" value="check">
-                    <label for="toc">I agree to the terms and condition of Frawsalla</label>
-                </div>
-                <div class="span-error"> <span class="error" id="error-toc"></span> </div>
-                
-    
-                <div class="form-submit">
-                    <button type="submit" id="btn-submit">Submit</button>
-                </div>
-            </form>
-        </div>
+      <h1 class="heading">Play Now</h1>
+      <div class="form-container">
+        <form name="form" action="../home.html" method="POST">
+          <div class="form-group-1">
+            <label for="name" class="form-title">Name</label>
+            <input type="text" name="name" id="name" />
+            <span class="error" id="error-name"></span>
+          </div>
+
+          <div class="form-group-1">
+            <label for="email" class="form-title">Email</label>
+            <input type="email" name="email" id="email" />
+            <span class="error" id="error-email"></span>
+          </div>
+
+          <div class="form-group-1">
+            <label for="password" class="form-title">Password</label>
+            <input type="password" name="password" id="password" />
+            <span class="error" id="error-password"></span>
+          </div>
+
+          <label for="gender" class="form-title">Gender</label>
+          <div class="form-group-2">
+            <input type="radio" name="gender" id="gender" value="Male" /> Male
+            <input type="radio" name="gender" id="gender" value="Female" />
+            Female
+            <span class="error" id="error-gender"></span>
+          </div>
+
+          <div class="form-group-3">
+            <input type="checkbox" name="toc" id="toc" value="check" />
+            <label for="toc"
+              >I agree to the terms and condition of Frawsalla</label
+            >
+          </div>
+          <div class="span-error">
+            <span class="error" id="error-toc"></span>
+          </div>
+
+          <div class="form-submit">
+            <button type="submit" id="btn-submit">Submit</button>
+          </div>
+        </form>
+      </div>
     </div>
     <script src="../script/play-now.js"></script>
 
     <footer>
-        <div class="copyright">&copy; Frawsalla Dev Team</div>
-        <div class="social">
-            <span>Contact us</span>
-            <a href="https://facebook.com">
-                <img src="../images/social/facebook.png" alt="" />
-            </a>
-            <a href="https://instagram.com">
-                <img src="../images/social/instagram.png" alt="" />
-            </a>
-            <a href="https://twitter.com">
-                <img src="../images/social/twitter.png" alt="" />
-            </a>
-        </div>
+      <div class="copyright">&copy; Frawsalla Dev Team</div>
+      <div class="social">
+        <span>Contact us</span>
+        <a href="https://facebook.com">
+          <img src="../images/social/facebook.png" alt="" />
+        </a>
+        <a href="https://instagram.com">
+          <img src="../images/social/instagram.png" alt="" />
+        </a>
+        <a href="https://twitter.com">
+          <img src="../images/social/twitter.png" alt="" />
+        </a>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>

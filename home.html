@@ -23,35 +23,25 @@
       </label>
       <input type="checkbox" name="" id="hamburger" hidden />
       <div class="menu">
-        <a href="/">Screenshots</a>
-        <a href="/">Events</a>
-        <a href="/">Characters</a>
+        <a href="pages/screenshots.html">Screenshots</a>
+        <a href="pages/events.html">Events</a>
+        <a href="pages/charaters.html">Characters</a>
         <a href="pages/play-now.html">Play Now</a>
       </div>
-      <img src="images/Frawsalla Logo.png" alt="Frawsalla Logo" class="logo" />
+      <a href="home.html"
+        ><img src="images/Frawsalla Logo.png" alt="Frawsalla Logo" class="logo"
+      /></a>
     </header>
-    <section class="screenshots">
+    <section class="events">
       <div class="carousel">
         <div id="prev" onclick="prevImg()">
-          <img src="images/gameplay/prev.png" alt="" />
+          <img src="images/event/prev.png" alt="" />
         </div>
         <div class="carousel-content">
           <div class="carousel-images">
-            <img
-              class="carousel-image active"
-              src="images/gameplay/gameplay1.png"
-              alt=""
-            />
-            <img
-              class="carousel-image"
-              src="images/gameplay/gameplay2.png"
-              alt=""
-            />
-            <img
-              class="carousel-image"
-              src="images/gameplay/gameplay3.png"
-              alt=""
-            />
+            <img class="carousel-image active" src="images/event/event1.jpg" />
+            <img class="carousel-image" src="images/event/event2.jpg" />
+            <img class="carousel-image" src="images/event/event3.jpg" />
           </div>
           <div class="dots">
             <div class="dot active"></div>
@@ -60,35 +50,36 @@
           </div>
         </div>
         <div id="next" onclick="nextImg()">
-          <img src="images/gameplay/next.png" alt="" />
-        </div>
-      </div>
-    </section>
-
-    <section class="events">
-      <h1 class="heading">Events</h1>
-      <div class="content">
-        <div class="card">
-          <div class="card-img">
-            <img src="images/event/levelup.png" alt="" />
-          </div>
-          <div class="card-text">Level Up Event</div>
-        </div>
-        <div class="card">
-          <div class="card-img">
-            <img src="images/event/Free energy.png" alt="" />
-          </div>
-          <div class="card-text">Free Energy Event</div>
-        </div>
-        <div class="card">
-          <div class="card-img">
-            <img src="images/event/2x level.png" alt="" />
-          </div>
-          <div class="card-text">2x Power Event</div>
+          <img src="images/event/next.png" alt="" />
         </div>
       </div>
       <div class="center">
-        <button class="button">MORE</button>
+        <button class="button">
+          <a href="pages/play-now.html">PLAY NOW</a>
+        </button>
+      </div>
+    </section>
+
+    <section class="Screenshots">
+      <h1 class="heading">Screenshots</h1>
+      <div class="content">
+        <div class="card">
+          <div class="card-img">
+            <img src="images/gameplay/gameplay6.png" alt="" />
+          </div>
+          <div class="card-text">Online Ranked 1v1</div>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="images/gameplay/gameplay4.png" alt="" />
+          </div>
+          <div class="card-text">Online Ranked 2v2</div>
+        </div>
+      </div>
+      <div class="center">
+        <button class="button">
+          <a href="pages/screenshots.html">MORE</a>
+        </button>
       </div>
     </section>
 
@@ -101,7 +92,9 @@
         <a href=""><img src="images/characters/character3.png" alt="" /></a>
       </div>
       <div class="center">
-        <button class="button">MORE</button>
+        <button class="button">
+          <a href="pages/charaters.html">MORE</a>
+        </button>
       </div>
     </section>
     <footer>

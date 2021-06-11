@@ -73,9 +73,10 @@ section {
 
 .content img {
   width: 80%;
+  padding: 1rem;
 }
 
-.content a {
+.content {
   display: flex;
   justify-content: center;
 }

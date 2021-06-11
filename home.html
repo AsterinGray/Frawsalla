@@ -26,13 +26,15 @@
         <a href="/">Screenshots</a>
         <a href="/">Events</a>
         <a href="/">Characters</a>
-        <a href="/">Play Now</a>
+        <a href="pages/play-now.html">Play Now</a>
       </div>
       <img src="images/Frawsalla Logo.png" alt="Frawsalla Logo" class="logo" />
     </header>
     <section class="screenshots">
       <div class="carousel">
-        <div id="next">next</div>
+        <div id="prev" onclick="prevImg()">
+          <img src="images/gameplay/prev.png" alt="" />
+        </div>
         <div class="carousel-content">
           <div class="carousel-images">
             <img
@@ -52,12 +54,14 @@
             />
           </div>
           <div class="dots">
-            <div class="dot"></div>
+            <div class="dot active"></div>
             <div class="dot"></div>
             <div class="dot"></div>
           </div>
         </div>
-        <div id="prev">prev</div>
+        <div id="next" onclick="nextImg()">
+          <img src="images/gameplay/next.png" alt="" />
+        </div>
       </div>
     </section>
 

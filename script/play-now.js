@@ -9,9 +9,6 @@ buttonObj.onclick = function () {
     var genderFemale = document.form.gender[1];
     var toc = document.form.toc.checked;
 
-    console.log(nama);
-    console.log(email);
-
     //variable to get error span
     const errNamaObj = document.getElementById('error-name');
     const errEmailObj = document.getElementById('error-email');
@@ -70,7 +67,6 @@ buttonObj.onclick = function () {
     }
 
     //5. TOC
-    console.log(toc);
     if (toc == true) errToc.innerText = '';
     else {
       errToc.innerText = "You haven't agreed to the terms & condition";
@@ -82,7 +78,6 @@ buttonObj.onclick = function () {
       window.location.replace('../home.html');
     }
   } catch (err) {
-    console.log(err);
     return false;
   }
   return false;

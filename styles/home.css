@@ -87,6 +87,7 @@ section {
   padding: 1rem 2rem;
   text-align: center;
   width: 45%;
+  margin: 1rem;
 }
 
 .card img {
@@ -150,6 +151,14 @@ section {
 
   .carousel-images {
     height: 40vh;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .content {
+    flex-direction: column;
   }
 }
 

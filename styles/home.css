@@ -13,10 +13,6 @@ section {
   justify-content: center;
 }
 
-.carousel img {
-  width: 5rem;
-}
-
 .carousel-content {
   display: flex;
   flex-direction: column;
@@ -27,11 +23,15 @@ section {
 .carousel-images {
   display: flex;
   width: 60vw;
-  height: 65vh;
+  position: relative;
 }
 
-.carousel-images img {
-  width: 60vw;
+.carousel-image.active {
+  position: relative;
+}
+
+.carousel-image {
+  width: 100%;
   position: absolute;
   opacity: 0;
 }
@@ -135,7 +135,6 @@ section {
   .carousel-images {
     display: flex;
     width: 60vw;
-    height: 50vh;
   }
 }
 
@@ -149,16 +148,14 @@ section {
     padding: 3rem 10%;
   }
 
-  .carousel-images {
-    height: 40vh;
-  }
-
   .card {
     width: 100%;
   }
 
   .content {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -172,10 +169,6 @@ section {
     padding: 2rem 5%;
   }
 
-  .carousel-images {
-    height: 30vh;
-  }
-
   .button {
     width: 8rem;
     font-size: 1.3rem;
@@ -186,9 +179,5 @@ section {
   html,
   body {
     font-size: 10px;
-  }
-
-  .carousel-images {
-    height: 20vh;
   }
 }

@@ -13,3 +13,7 @@ Characters image and name
 Events and screenshots
 - https://www.brawlhalla.com/news
 - https://www.brawlhalla.com/
+- https://store.steampowered.com/app/291550/Brawlhalla/
+- gameplay1: https://www.brawlhalla.com/
+- gameplay3:  https://cdn.cloudflare.steamstatic.com/steam/apps/291550/ss_ef8d556d5c4a2147444146fc1df484ae07fae927.jpg?t=1619194091
+- gameplay6: https://cdn.cloudflare.steamstatic.com/steam/apps/291550/ss_4cb8e8a9606605eac97f3b0f09cf2d049f7b6215.jpg?t=1619194091

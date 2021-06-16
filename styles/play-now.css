@@ -8,7 +8,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: calc(100vh - 10rem);
+  min-height: calc(100vh - 10rem);
 }
 
 .form-title {
